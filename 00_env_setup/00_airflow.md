@@ -134,3 +134,10 @@ airflow users create \
 
 
 
+airflow connections add google_cloud_default \
+    --conn-type 'google_cloud_platform' \
+    --conn-extra '{"project_id": "peppy-plateau-447914-j6", "key_path": "/Users/gabi/codes/climate_trace/keys/keys.json"}'
+
+
+
+
