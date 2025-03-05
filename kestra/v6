@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Reference</title>
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            margin: 0;
+        }
+        .sidebar-group-item[data-sidebar-type="heading"]:last-child {
+            display: none;
+        }
+        .section-container:last-child {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!-- Add your own OpenAPI/Swagger spec file URL here: -->
+<script
+        id="api-reference"
+        data-url="/v6/swagger/openapi.json"></script>
+<script src="https://www.unpkg.com/@scalar/api-reference@1.25.40/dist/browser/standalone.js"></script>
+</body>
+</html>
