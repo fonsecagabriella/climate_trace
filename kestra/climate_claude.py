@@ -4,7 +4,6 @@ import requests
 import pandas as pd
 import argparse
 from typing import List, Dict, Union, Any
-import csv
 
 class ClimateTraceExtractor:
     BASE_URL = "https://api.climatetrace.org/v6"
@@ -14,9 +13,9 @@ class ClimateTraceExtractor:
         # Ensure output directory exists
         os.makedirs(self.OUTPUT_DIR, exist_ok=True)
 
-        # If to_year is not provided, increment since_year by 1
+        # If to_year is not provided, use since_year
         self.since_year = since_year
-        self.to_year = to_year or (since_year + 1)
+        self.to_year = to_year or since_year
 
     def get_countries(self) -> List[Dict]:
         """Retrieve list of countries from Climate Trace API."""
@@ -28,132 +27,110 @@ class ClimateTraceExtractor:
             print(f"Error fetching countries: {e}")
             return []
 
-    def get_sectors(self) -> List[str]:
-        """Retrieve list of sectors from Climate Trace API."""
+    def fetch_emissions_data(self, country_codes: List[str], year: int) -> List[Dict]:
+        """Fetch emissions data for specific countries and year."""
+        # Build the base URL
+        base_url = f"{self.BASE_URL}/country/emissions"
+
+        # Create URL with properly formatted country list (not using params to avoid URL encoding of commas)
+        countries_str = ",".join(country_codes)
+        url = f"{base_url}?since={year}&to={year+1}&countries={countries_str}"
+
         try:
-            response = requests.get(f"{self.BASE_URL}/definitions/sectors")
+            # Make the request with the manually formatted URL
+            print(f"Full request URL: {url}")
+            response = requests.get(url)
+            print(f"Response status: {response.status_code}")
+            print(f"Response content: {response.text[:500]}...")
+
             response.raise_for_status()
             return response.json()
+
         except requests.RequestException as e:
-            print(f"Error fetching sectors: {e}")
+            print(f"Error fetching emissions data: {e}")
+            if hasattr(e, 'response') and e.response is not None:
+                print(f"Error response: {e.response.text}")
             return []
 
-    def fetch_emissions_data(self, country: Union[str, Dict], sector: str) -> List[Dict]:
-        """Fetch emissions data for a specific country and sector."""
-        # Extract country code handling both string and dictionary inputs
-        country_code = country['alpha3'] if isinstance(country, dict) else country
-
-        params = {
-            "since": self.since_year,
-            "to": self.to_year,
-            "country": country_code,
-            "sector": sector
-        }
-        
-        try:
-            response = requests.get(f"{self.BASE_URL}/country/emissions", params=params)
-            print("RESPONSE")
-            print(response.status_code, response.text)  # Debugging output
-            response.raise_for_status()
-            return response.json()
-        except requests.RequestException as e:
-            print(f"Error fetching data for {country_code} in {sector}: {e}")
-            return []
-
-    def process_data_items(self, data: List[Any], sector: str) -> Dict:
+    def process_emissions_data(self, data: List[Dict]) -> pd.DataFrame:
         """
-        Process data items to extract emissions data for a sector.
-        
-        :param data: List of data items from API
-        :param sector: Sector name
-        :return: Dictionary with sector as key and emissions data as values
+        Process emissions data into a DataFrame with countries as rows 
+        and emission types as columns.
         """
-        # Handle both single dictionary and list inputs
-        if isinstance(data, dict):
-            data = [data]
+        countries_data = []
         
-        # Create a dictionary for this sector
-        sector_data = {'sector': sector}
-        
+        # Extract data for each country
         for item in data:
-            if isinstance(item, dict) and 'emissions' in item:
-                # Add emissions values directly as columns
-                for emission_type, value in item['emissions'].items():
-                    sector_data[emission_type] = value
+            if not isinstance(item, dict):
+                continue
                 
-                # If we found valid data, return it
-                if len(sector_data) > 1:  # More than just the 'sector' key
-                    return sector_data
+            country_code = item.get('country')
+            emissions = item.get('emissions', {})
+            
+            if not country_code or not emissions:
+                continue
+                
+            # Create a row for this country
+            country_row = {'country': country_code}
+            
+            # Add emissions values as columns
+            for emission_type, value in emissions.items():
+                country_row[emission_type] = value
+                
+            countries_data.append(country_row)
         
-        # Return the sector with nulls if no emissions data was found
-        return sector_data
+        # Convert to DataFrame
+        df = pd.DataFrame(countries_data)
+        
+        return df
 
-    def save_country_data(self, country_code: str, country_sectors_data: List[Dict]):
+    def save_year_data(self, year: int, data: pd.DataFrame):
         """
-        Save data to CSV for a specific country with sectors as rows.
+        Save emissions data for a specific year to CSV.
         
-        :param country_code: Country's alpha3 code
-        :param country_sectors_data: List of data items for the country, one per sector
+        :param year: Year of emissions data
+        :param data: DataFrame with countries as rows and emission types as columns
         """
-        # Create year-specific directory
-        year_dir = os.path.join(
-            self.OUTPUT_DIR, 
-            str(self.since_year)
-        )
-        os.makedirs(year_dir, exist_ok=True)
+        # Create output directory
+        os.makedirs(self.OUTPUT_DIR, exist_ok=True)
 
-        # Filename for the country
-        filename = os.path.join(
-            year_dir, 
-            f"{country_code}_emissions_{self.since_year}_to_{self.to_year}.csv"
-        )
+        # Filename for the year
+        filename = os.path.join(self.OUTPUT_DIR, f"global_emissions_{year}.csv")
 
-        # Check if we have data
-        if not country_sectors_data:
-            print(f"No data found for {country_code}")
-            return
-
-        # Create DataFrame with sectors as rows
-        df = pd.DataFrame(country_sectors_data)
-        
-        # Print column names for verification
-        print(f"Columns for {country_code}: {list(df.columns)}")
-        
         # Save to CSV
-        df.to_csv(filename, index=False)
-        
-        print(f"Saved emissions data for {country_code} to {filename}")
+        if not data.empty:
+            data.to_csv(filename, index=False)
+            print(f"Saved emissions data for {year} to {filename}")
+        else:
+            print(f"No data available for {year}")
 
-    def extract_emissions(self):
-        """Main extraction pipeline."""
-        # Get countries and sectors
+    def extract_emissions_by_year(self):
+        """Extract emissions data for each year."""
+        # Get all countries
         countries = self.get_countries()
-        sectors = self.get_sectors()
-
-        print(f"Extracting emissions data from {self.since_year} to {self.to_year}")
-        print(f"Countries to process: {len(countries)}")
-        print(f"Sectors to process: {len(sectors)}")
-
-        # Process each country
-        for country in countries:
-            country_code = country['alpha3']
-            country_sectors_data = []
-
-            for sector in sectors:
-                print(f"Processing {country.get('name', country_code)} - {sector}...")
-                data = self.fetch_emissions_data(country, sector)
+        country_codes = [country['alpha3'] for country in countries]
+        
+        print(f"Found {len(country_codes)} countries")
+        
+        # Process each year
+        for year in range(self.since_year, self.to_year + 1):
+            print(f"Processing emissions data for year {year}...")
+            
+            # Due to API limitations, we may need to process countries in batches
+            batch_size = 20  # Adjust based on API limitations
+            all_data = []
+            
+            for i in range(0, len(country_codes), batch_size):
+                batch_countries = country_codes[i:i+batch_size]
+                print(f"Processing batch of {len(batch_countries)} countries...")
                 
-                # Process and add sector data to country's consolidated data
+                data = self.fetch_emissions_data(batch_countries, year)
                 if data:
-                    processed_data = self.process_data_items(data, sector)
-                    country_sectors_data.append(processed_data)
-                else:
-                    # Add empty sector data to maintain consistent rows
-                    country_sectors_data.append({'sector': sector})
-
-            # Save country data immediately after processing all sectors
-            if country_sectors_data:
-                self.save_country_data(country_code, country_sectors_data)
+                    all_data.extend(data)
+            
+            # Process and save data for this year
+            df = self.process_emissions_data(all_data)
+            self.save_year_data(year, df)
 
 def main():
     # Set up argument parser
@@ -169,7 +146,7 @@ def main():
         since_year=args.since_year, 
         to_year=args.to_year
     )
-    extractor.extract_emissions()
+    extractor.extract_emissions_by_year()
 
 if __name__ == "__main__":
     main()
