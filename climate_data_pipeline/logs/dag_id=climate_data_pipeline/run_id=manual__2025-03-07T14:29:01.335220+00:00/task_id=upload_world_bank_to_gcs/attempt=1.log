@@ -1,0 +1,27 @@
+[2025-03-07T15:29:49.239+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-07T15:29:49.248+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: climate_data_pipeline.upload_world_bank_to_gcs manual__2025-03-07T14:29:01.335220+00:00 [queued]>
+[2025-03-07T15:29:49.253+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: climate_data_pipeline.upload_world_bank_to_gcs manual__2025-03-07T14:29:01.335220+00:00 [queued]>
+[2025-03-07T15:29:49.253+0100] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-07T15:29:49.261+0100] {taskinstance.py:2890} INFO - Executing <Task(LocalFilesystemToGCSOperator): upload_world_bank_to_gcs> on 2025-03-07 14:29:01.335220+00:00
+[2025-03-07T15:29:49.268+0100] {standard_task_runner.py:72} INFO - Started process 10318 to run task
+[2025-03-07T15:29:49.274+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'climate_data_pipeline', 'upload_world_bank_to_gcs', 'manual__2025-03-07T14:29:01.335220+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/climate-data-dag.py', '--cfg-path', '/var/folders/55/x1yqz6851xj6j2f0smdhs4jh0000gn/T/tmp1neu1rpy']
+[2025-03-07T15:29:49.276+0100] {standard_task_runner.py:105} INFO - Job 31: Subtask upload_world_bank_to_gcs
+[2025-03-07T15:29:49.309+0100] {task_command.py:467} INFO - Running <TaskInstance: climate_data_pipeline.upload_world_bank_to_gcs manual__2025-03-07T14:29:01.335220+00:00 [running]> on host gabis-imac-pro.local
+[2025-03-07T15:29:49.348+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='zoomcamp' AIRFLOW_CTX_DAG_ID='climate_data_pipeline' AIRFLOW_CTX_TASK_ID='upload_world_bank_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2025-03-07T14:29:01.335220+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-07T14:29:01.335220+00:00'
+[2025-03-07T15:29:49.349+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-07T15:29:49.350+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-07T15:29:49.350+0100] {logging_mixin.py:190} INFO - Current task name:upload_world_bank_to_gcs state:running start_date:2025-03-07 14:29:49.248759+00:00
+[2025-03-07T15:29:49.350+0100] {logging_mixin.py:190} INFO - Dag name:climate_data_pipeline and current dag run status:running
+[2025-03-07T15:29:49.351+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-07T15:29:49.354+0100] {connection.py:277} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2025-03-07T15:29:49.357+0100] {base.py:84} INFO - Retrieving connection 'google_cloud_default'
+[2025-03-07T15:29:50.032+0100] {gcs.py:560} INFO - File /Users/gabi/codes/climate_trace/climate_data_pipeline/data/world_bank/world_bank_indicators_2016.csv uploaded to world_bank/world_bank_indicators_2016.csv in zoomcamp-climate-trace bucket
+[2025-03-07T15:29:50.040+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-07T15:29:50.040+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=climate_data_pipeline, task_id=upload_world_bank_to_gcs, run_id=manual__2025-03-07T14:29:01.335220+00:00, execution_date=20250307T142901, start_date=20250307T142949, end_date=20250307T142950
+[2025-03-07T15:29:50.049+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-07T15:29:50.049+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-07T15:29:50.050+0100] {logging_mixin.py:190} INFO - Dag name:climate_data_pipeline queued_at:2025-03-07 14:29:01.346752+00:00
+[2025-03-07T15:29:50.050+0100] {logging_mixin.py:190} INFO - Task hostname:gabis-imac-pro.local operator:LocalFilesystemToGCSOperator
+[2025-03-07T15:29:50.069+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-07T15:29:50.080+0100] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-07T15:29:50.080+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

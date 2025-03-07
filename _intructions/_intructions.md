@@ -84,6 +84,54 @@ Login with:
 Username: admin
 Password: admin
 
+In admin, add the connection to GSC.
+
+<img src="./images/airflow_gcs.png" width="80%">
+
+## 9.0 Create the DAG and data_extractor
+Create a [data_extractor](./../climate_data_pipeline/scripts/data_extractor.py), which combines the climate and word bank extractors.
+With this, you can create the [dag - climate-data-dag](../climate_data_pipeline/dags/climate-data-dag.py).
 
 
+<img src="./images/dag_climate_data.png" width="80%">
 
+## 10.0 Run the DAG
+
+In the DAG above, you will need to specify the year to collect the data.
+This can be done in different ways.
+
+**Option 01: Via the Airflow UI**
+- Go to Admin >> Variables
+- Set Key as "extraction_year" and Value as your desired year (e.g., "2016")
+
+**Option 02: triggering the DAG via API**
+````bash
+curl -X POST \
+  http://localhost:8080/api/v1/dags/climate_data_pipeline/dagRuns \
+  -H 'Content-Type: application/json' \
+  --user "username:password" \
+  -d '{"conf": {"extraction_year": 2016}}'
+````
+
+You will need to run the dag for 2015 to 2024 as a backfill.
+
+## 11.0 Batch processing
+Now we will use PySpark to process the data from the data lake (Google buckets) to a data warehouse (BigQuery).
+With the virtual environment active, download Pyspark:
+
+`pip install pyspark`
+
+Create a new file in the scripts directory: [spark_processor.py](../climate_data_pipeline/scripts/spark_processor.py)
+Create a new dag [spark-processing-dag.py](../climate_data_pipeline/dags/spark-processing-dag.py)
+
+By creating another DAG, we implement a modula approach which gives us flexibility to run either DAG independently if needed.
+
+<img src="./images/airflow-dag-bigquery.png" width="80%">
+
+**Additional considerations for production deployment**
+For a production environment, you may want to consider:
+
+- Using a dedicated Spark cluster instead of running Spark within Airflow
+- Configuring Spark memory and executor settings based on your data volume
+- Adding error handling and retries for the Spark jobs
+- Setting up monitoring for the Spark jobs

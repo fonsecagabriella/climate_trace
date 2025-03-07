@@ -5,6 +5,10 @@ import time
 
 def fetch_world_bank_data(year):
     """Fetch data from World Bank API directly."""
+
+    # treats year as string
+    # Convert year to integer if it's a string
+    year = int(year) if isinstance(year, str) else year
     
     # Define indicators
     indicators = {
@@ -77,6 +81,11 @@ def fetch_world_bank_data(year):
 def fetch_climate_trace_data(year):
     """Fetch data from Climate Trace API directly."""
     
+    # treats year as string
+    # Convert year to integer if it's a string
+    year = int(year) if isinstance(year, str) else year
+
+
     # Get list of countries
     print("Fetching list of countries from Climate Trace API")
     countries_response = requests.get("https://api.climatetrace.org/v6/definitions/countries/")

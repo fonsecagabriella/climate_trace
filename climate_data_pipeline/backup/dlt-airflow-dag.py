@@ -10,6 +10,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.providers.google.cloud.transfers.local_to_gcs import LocalFilesystemToGCSOperator
 
+"""
 # Import the dlt extractor functions
 from scripts.dlt_extractor import run_world_bank_pipeline, run_climate_trace_pipeline
 
@@ -97,3 +98,5 @@ upload_climate_trace_to_gcs = LocalFilesystemToGCSOperator(
 # Define task dependencies - for now, just run the extraction tasks
 # extract_world_bank >> upload_world_bank_to_gcs
 # extract_climate_trace >> upload_climate_trace_to_gcs
+
+"""

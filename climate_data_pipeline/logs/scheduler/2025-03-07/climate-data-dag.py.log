@@ -221,3 +221,192 @@ ModuleNotFoundError: No module named 'dlt_extractor'
 [2025-03-07T15:21:57.504+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:21:57.504+0100] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-07T15:21:57.516+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:21:57.515+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
 [2025-03-07T15:21:57.527+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 0.979 seconds
+[2025-03-07T15:24:13.721+0100] {processor.py:186} INFO - Started process (PID=9614) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:24:13.724+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:24:13.724+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:24:13.724+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:24:14.639+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:24:14.709+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:24:14.708+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:24:14.721+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:24:14.721+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:24:14.733+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.016 seconds
+[2025-03-07T15:26:33.253+0100] {processor.py:186} INFO - Started process (PID=9911) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:26:33.256+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:26:33.257+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:26:33.257+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:26:34.170+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:26:34.299+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:26:34.299+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:26:34.311+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:26:34.311+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:26:34.326+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.077 seconds
+[2025-03-07T15:26:53.234+0100] {processor.py:186} INFO - Started process (PID=9948) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:26:53.237+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:26:53.238+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:26:53.238+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:26:54.153+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:26:54.158+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:26:54.158+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:26:54.228+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:26:54.228+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:26:54.239+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.008 seconds
+[2025-03-07T15:28:30.981+0100] {processor.py:186} INFO - Started process (PID=10204) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:28:30.984+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:28:30.985+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:28:30.985+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:28:31.884+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:28:31.952+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:28:31.952+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:28:31.965+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:28:31.965+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:28:31.977+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 0.999 seconds
+[2025-03-07T15:32:02.768+0100] {processor.py:186} INFO - Started process (PID=10507) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:32:02.771+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:32:02.772+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:32:02.772+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:32:03.750+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:32:03.843+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:32:03.843+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:32:03.858+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:32:03.857+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:32:03.871+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.107 seconds
+[2025-03-07T15:34:18.054+0100] {processor.py:186} INFO - Started process (PID=10734) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:34:18.057+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:34:18.058+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:34:18.057+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:34:18.928+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:34:18.995+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:34:18.995+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:34:19.007+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:34:19.007+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:34:19.019+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 0.968 seconds
+[2025-03-07T15:36:34.238+0100] {processor.py:186} INFO - Started process (PID=11032) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:36:34.241+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:36:34.242+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:36:34.242+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:36:35.157+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:36:35.226+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:36:35.226+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:36:35.239+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:36:35.238+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:36:35.250+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.015 seconds
+[2025-03-07T15:38:49.217+0100] {processor.py:186} INFO - Started process (PID=11276) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:38:49.220+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:38:49.221+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:38:49.220+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:38:50.093+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:38:50.162+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:38:50.162+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:38:50.174+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:38:50.174+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:38:50.186+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 0.972 seconds
+[2025-03-07T15:40:58.708+0100] {processor.py:186} INFO - Started process (PID=11471) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:40:58.712+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:40:58.712+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:40:58.712+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:40:59.636+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:40:59.705+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:40:59.704+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:40:59.717+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:40:59.717+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:40:59.729+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.024 seconds
+[2025-03-07T15:43:08.372+0100] {processor.py:186} INFO - Started process (PID=11674) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:43:08.375+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:43:08.376+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:43:08.376+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:43:09.268+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:43:09.335+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:43:09.335+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:43:09.347+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:43:09.347+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:43:09.358+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 0.989 seconds
+[2025-03-07T15:45:16.765+0100] {processor.py:186} INFO - Started process (PID=11885) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:45:16.768+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:45:16.769+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:45:16.769+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:45:17.721+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:45:17.731+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:45:17.730+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:45:17.742+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:45:17.742+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:45:17.756+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 0.994 seconds
+[2025-03-07T15:47:50.178+0100] {processor.py:186} INFO - Started process (PID=12117) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:47:50.181+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:47:50.182+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:47:50.181+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:47:51.124+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:47:51.192+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:47:51.191+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:47:51.203+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:47:51.203+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:47:51.216+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.041 seconds
+[2025-03-07T15:50:04.281+0100] {processor.py:186} INFO - Started process (PID=12398) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:50:04.284+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:50:04.285+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:50:04.285+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:50:05.256+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:50:05.265+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:50:05.264+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:50:05.276+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:50:05.276+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:50:05.288+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.011 seconds
+[2025-03-07T15:52:39.157+0100] {processor.py:186} INFO - Started process (PID=12675) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:52:39.160+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:52:39.161+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:52:39.161+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:52:40.083+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:52:40.150+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:52:40.149+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:52:40.161+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:52:40.161+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T15:52:40.175+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.021 seconds
+[2025-03-07T15:54:51.187+0100] {processor.py:186} INFO - Started process (PID=12957) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:54:51.190+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:54:51.191+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:54:51.191+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:54:52.157+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:54:52.167+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:54:52.166+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:54:52.178+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:54:52.178+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T15:54:52.189+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.006 seconds
+[2025-03-07T15:57:09.702+0100] {processor.py:186} INFO - Started process (PID=13164) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:57:09.705+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:57:09.706+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:57:09.706+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:57:10.649+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:57:10.660+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:57:10.659+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:57:10.672+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:57:10.672+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T15:57:10.684+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 0.985 seconds
+[2025-03-07T15:59:26.610+0100] {processor.py:186} INFO - Started process (PID=13420) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:59:26.613+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:59:26.614+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:59:26.614+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:59:27.608+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:59:27.618+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:59:27.617+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:59:27.629+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:59:27.629+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T15:59:27.642+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.036 seconds
+[2025-03-07T16:02:26.803+0100] {processor.py:186} INFO - Started process (PID=13708) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:02:26.807+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T16:02:26.807+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:02:26.807+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:02:27.761+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:02:27.829+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:02:27.828+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:02:27.840+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:02:27.839+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T16:02:27.851+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.051 seconds
+[2025-03-07T16:06:12.109+0100] {processor.py:186} INFO - Started process (PID=14009) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:06:12.112+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T16:06:12.113+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:06:12.113+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:06:13.054+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:06:13.118+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:06:13.118+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:06:13.129+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:06:13.129+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T16:06:13.141+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.035 seconds
+[2025-03-07T16:09:16.422+0100] {processor.py:186} INFO - Started process (PID=14321) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:09:16.425+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T16:09:16.426+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:09:16.426+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:09:17.388+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:09:17.453+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:09:17.452+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:09:17.463+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:09:17.463+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T16:09:17.477+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.058 seconds
+[2025-03-07T16:12:22.421+0100] {processor.py:186} INFO - Started process (PID=14635) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:12:22.425+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T16:12:22.426+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:12:22.426+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:12:23.413+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:12:23.476+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:12:23.476+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:12:23.487+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:12:23.487+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T16:12:23.500+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.083 seconds
+[2025-03-07T16:14:35.988+0100] {processor.py:186} INFO - Started process (PID=14936) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:14:35.991+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T16:14:35.992+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:14:35.992+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:14:36.964+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:14:36.975+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:14:36.974+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:14:36.987+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:14:36.987+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T16:14:36.999+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.014 seconds
+[2025-03-07T16:16:47.991+0100] {processor.py:186} INFO - Started process (PID=15134) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:16:47.995+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T16:16:47.996+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:16:47.996+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:16:49.014+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:16:49.024+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:16:49.023+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:16:49.035+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:16:49.035+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T16:16:49.047+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.058 seconds
+[2025-03-07T16:19:12.825+0100] {processor.py:186} INFO - Started process (PID=15426) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:19:12.828+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T16:19:12.829+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:19:12.829+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:19:13.773+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:19:13.784+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:19:13.782+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:19:13.795+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:19:13.795+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T16:19:13.807+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 0.985 seconds
+[2025-03-07T16:21:27.444+0100] {processor.py:186} INFO - Started process (PID=15670) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:21:27.448+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T16:21:27.449+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:21:27.448+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:21:28.447+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:21:28.458+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:21:28.457+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:21:28.470+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:21:28.469+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T16:21:28.483+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.041 seconds
+[2025-03-07T16:28:17.156+0100] {processor.py:186} INFO - Started process (PID=16106) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:28:17.159+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T16:28:17.160+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:28:17.160+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:28:18.160+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:28:18.229+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:28:18.228+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:28:18.241+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:28:18.241+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T16:28:18.255+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.103 seconds
+[2025-03-07T16:31:48.936+0100] {processor.py:186} INFO - Started process (PID=16448) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:31:48.939+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T16:31:48.940+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:31:48.940+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:31:49.866+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T16:31:49.934+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:31:49.934+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:31:49.950+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:31:49.950+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2026-03-07T00:00:00+00:00
+[2025-03-07T16:31:49.965+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.032 seconds

@@ -1,0 +1,34 @@
+[2025-03-07T16:00:17.767+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-07T16:00:17.773+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: climate_data_pipeline.extract_world_bank_data manual__2025-03-07T15:00:13.672619+00:00 [queued]>
+[2025-03-07T16:00:17.777+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: climate_data_pipeline.extract_world_bank_data manual__2025-03-07T15:00:13.672619+00:00 [queued]>
+[2025-03-07T16:00:17.777+0100] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-07T16:00:17.785+0100] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): extract_world_bank_data> on 2025-03-07 15:00:13.672619+00:00
+[2025-03-07T16:00:17.791+0100] {standard_task_runner.py:72} INFO - Started process 13539 to run task
+[2025-03-07T16:00:17.798+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'climate_data_pipeline', 'extract_world_bank_data', 'manual__2025-03-07T15:00:13.672619+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/climate-data-dag.py', '--cfg-path', '/var/folders/55/x1yqz6851xj6j2f0smdhs4jh0000gn/T/tmprlrv61zk']
+[2025-03-07T16:00:17.800+0100] {standard_task_runner.py:105} INFO - Job 41: Subtask extract_world_bank_data
+[2025-03-07T16:00:17.833+0100] {task_command.py:467} INFO - Running <TaskInstance: climate_data_pipeline.extract_world_bank_data manual__2025-03-07T15:00:13.672619+00:00 [running]> on host gabis-imac-pro.local
+[2025-03-07T16:00:17.874+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='zoomcamp' AIRFLOW_CTX_DAG_ID='climate_data_pipeline' AIRFLOW_CTX_TASK_ID='extract_world_bank_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-07T15:00:13.672619+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-07T15:00:13.672619+00:00'
+[2025-03-07T16:00:17.875+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-07T16:00:17.875+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-07T16:00:17.876+0100] {logging_mixin.py:190} INFO - Current task name:extract_world_bank_data state:running start_date:2025-03-07 15:00:17.774017+00:00
+[2025-03-07T16:00:17.876+0100] {logging_mixin.py:190} INFO - Dag name:climate_data_pipeline and current dag run status:running
+[2025-03-07T16:00:17.876+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-07T16:00:17.877+0100] {logging_mixin.py:190} INFO - Fetching list of countries from World Bank API
+[2025-03-07T16:00:18.191+0100] {logging_mixin.py:190} INFO - Fetching Population, total for 2017...
+[2025-03-07T16:00:19.136+0100] {logging_mixin.py:190} INFO - Fetching GDP per capita (current US$) for 2017...
+[2025-03-07T16:00:19.945+0100] {logging_mixin.py:190} INFO - Fetching CO2 emissions (metric tons per capita) for 2017...
+[2025-03-07T16:00:20.747+0100] {logging_mixin.py:190} INFO - Fetching Life expectancy at birth, total (years) for 2017...
+[2025-03-07T16:00:21.519+0100] {logging_mixin.py:190} INFO - Fetching School enrollment, secondary (% gross) for 2017...
+[2025-03-07T16:00:22.279+0100] {logging_mixin.py:190} INFO - Fetching Gini index (World Bank estimate) for 2017...
+[2025-03-07T16:00:23.033+0100] {logging_mixin.py:190} INFO - Fetching Unemployment, total (% of total labor force) for 2017...
+[2025-03-07T16:00:23.806+0100] {logging_mixin.py:190} INFO - Saved World Bank indicators to: /Users/gabi/codes/climate_trace/climate_data_pipeline/data/world_bank/world_bank_indicators_2017.csv
+[2025-03-07T16:00:23.807+0100] {python.py:240} INFO - Done. Returned value was: /Users/gabi/codes/climate_trace/climate_data_pipeline/data/world_bank/world_bank_indicators_2017.csv
+[2025-03-07T16:00:23.816+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-07T16:00:23.817+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=climate_data_pipeline, task_id=extract_world_bank_data, run_id=manual__2025-03-07T15:00:13.672619+00:00, execution_date=20250307T150013, start_date=20250307T150017, end_date=20250307T150023
+[2025-03-07T16:00:23.826+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-07T16:00:23.826+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-07T16:00:23.826+0100] {logging_mixin.py:190} INFO - Dag name:climate_data_pipeline queued_at:2025-03-07 15:00:13.681973+00:00
+[2025-03-07T16:00:23.827+0100] {logging_mixin.py:190} INFO - Task hostname:gabis-imac-pro.local operator:PythonOperator
+[2025-03-07T16:00:23.867+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-07T16:00:23.884+0100] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-07T16:00:23.885+0100] {local_task_job_runner.py:245} INFO - ::endgroup::
