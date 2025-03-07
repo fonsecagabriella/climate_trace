@@ -111,3 +111,10 @@
 [2025-03-07T15:16:56.583+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:16:56.582+0100] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-07T15:16:56.594+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:16:56.594+0100] {dag.py:4180} INFO - Setting next_dagrun for latest_only_with_trigger to 2025-03-07T08:00:00+00:00, run_after=2025-03-07T12:00:00+00:00
 [2025-03-07T15:16:56.606+0100] {processor.py:208} INFO - Processing /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.107 seconds
+[2025-03-07T15:21:29.109+0100] {processor.py:186} INFO - Started process (PID=9237) to work on /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-03-07T15:21:29.112+0100] {processor.py:914} INFO - Processing file /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2025-03-07T15:21:29.113+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:21:29.113+0100] {dagbag.py:588} INFO - Filling up the DagBag from /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-03-07T15:21:29.119+0100] {processor.py:925} INFO - DAG(s) 'latest_only_with_trigger' retrieved from /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-03-07T15:21:29.191+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:21:29.191+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:21:29.203+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:21:29.202+0100] {dag.py:4180} INFO - Setting next_dagrun for latest_only_with_trigger to 2025-03-07T08:00:00+00:00, run_after=2025-03-07T12:00:00+00:00
+[2025-03-07T15:21:29.215+0100] {processor.py:208} INFO - Processing /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.109 seconds

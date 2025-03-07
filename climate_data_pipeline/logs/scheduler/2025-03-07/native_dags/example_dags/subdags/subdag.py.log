@@ -118,3 +118,13 @@
 [2025-03-07T15:17:37.228+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:17:37.228+0100] {dagbag.py:588} INFO - Filling up the DagBag from /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py
 [2025-03-07T15:17:37.230+0100] {processor.py:927} WARNING - No viable dags retrieved from /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py
 [2025-03-07T15:17:37.297+0100] {processor.py:208} INFO - Processing /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py took 0.076 seconds
+[2025-03-07T15:19:55.102+0100] {processor.py:186} INFO - Started process (PID=9026) to work on /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py
+[2025-03-07T15:19:55.105+0100] {processor.py:914} INFO - Processing file /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2025-03-07T15:19:55.106+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:19:55.106+0100] {dagbag.py:588} INFO - Filling up the DagBag from /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py
+[2025-03-07T15:19:55.108+0100] {processor.py:927} WARNING - No viable dags retrieved from /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py
+[2025-03-07T15:19:55.177+0100] {processor.py:208} INFO - Processing /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py took 0.078 seconds
+[2025-03-07T15:22:07.127+0100] {processor.py:186} INFO - Started process (PID=9324) to work on /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py
+[2025-03-07T15:22:07.131+0100] {processor.py:914} INFO - Processing file /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2025-03-07T15:22:07.131+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:22:07.131+0100] {dagbag.py:588} INFO - Filling up the DagBag from /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py
+[2025-03-07T15:22:07.133+0100] {processor.py:927} WARNING - No viable dags retrieved from /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py
+[2025-03-07T15:22:07.200+0100] {processor.py:208} INFO - Processing /usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py took 0.075 seconds

@@ -207,3 +207,17 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'dlt_extractor'
 [2025-03-07T15:17:30.655+0100] {processor.py:927} WARNING - No viable dags retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
 [2025-03-07T15:17:30.736+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 0.973 seconds
+[2025-03-07T15:19:44.085+0100] {processor.py:186} INFO - Started process (PID=9007) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:19:44.088+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:19:44.089+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:19:44.089+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:19:44.995+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:19:45.126+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:19:45.126+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:19:45.138+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:19:45.138+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:19:45.154+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 1.071 seconds
+[2025-03-07T15:21:56.551+0100] {processor.py:186} INFO - Started process (PID=9295) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:21:56.554+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py for tasks to queue
+[2025-03-07T15:21:56.555+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:21:56.555+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:21:57.438+0100] {processor.py:925} INFO - DAG(s) 'climate_data_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py
+[2025-03-07T15:21:57.504+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:21:57.504+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T15:21:57.516+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:21:57.515+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T15:21:57.527+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/climate-data-dag.py took 0.979 seconds
