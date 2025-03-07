@@ -1,0 +1,197 @@
+[2025-03-07T14:13:11.662+0100] {processor.py:186} INFO - Started process (PID=2911) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:13:11.665+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T14:13:11.666+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:13:11.666+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:13:12.529+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:13:12.529+0100] {dagbag.py:387} ERROR - Failed to import: /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py", line 11, in <module>
+    from scripts.dlt_extractor import run_world_bank_pipeline, run_climate_trace_pipeline
+ModuleNotFoundError: No module named 'scripts.dlt_extractor'
+[2025-03-07T14:13:12.530+0100] {processor.py:927} WARNING - No viable dags retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:13:12.605+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 0.946 seconds
+[2025-03-07T14:18:15.172+0100] {processor.py:186} INFO - Started process (PID=3433) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:18:15.175+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T14:18:15.176+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:18:15.175+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:18:16.041+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:18:16.040+0100] {dagbag.py:387} ERROR - Failed to import: /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py", line 11, in <module>
+    from scripts.dlt_extractor import run_world_bank_pipeline, run_climate_trace_pipeline
+ModuleNotFoundError: No module named 'scripts.dlt_extractor'
+[2025-03-07T14:18:16.041+0100] {processor.py:927} WARNING - No viable dags retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:18:16.118+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 0.949 seconds
+[2025-03-07T14:22:45.756+0100] {processor.py:186} INFO - Started process (PID=3961) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:22:45.760+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T14:22:45.761+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:22:45.761+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:22:46.673+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:22:46.672+0100] {dagbag.py:387} ERROR - Failed to import: /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py", line 11, in <module>
+    from scripts.dlt_extractor import run_world_bank_pipeline, run_climate_trace_pipeline
+ModuleNotFoundError: No module named 'scripts.dlt_extractor'
+[2025-03-07T14:22:46.674+0100] {processor.py:927} WARNING - No viable dags retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:22:46.751+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 0.998 seconds
+[2025-03-07T14:43:14.782+0100] {processor.py:186} INFO - Started process (PID=4824) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:43:14.785+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T14:43:14.785+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:43:14.785+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:43:15.662+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:43:15.661+0100] {dagbag.py:387} ERROR - Failed to import: /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py", line 11, in <module>
+    from scripts.dlt_extractor import run_world_bank_pipeline, run_climate_trace_pipeline
+ModuleNotFoundError: No module named 'scripts.dlt_extractor'
+[2025-03-07T14:43:15.663+0100] {processor.py:927} WARNING - No viable dags retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:43:15.745+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 0.966 seconds
+[2025-03-07T14:46:02.021+0100] {processor.py:186} INFO - Started process (PID=5061) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:46:02.024+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T14:46:02.025+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:46:02.025+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:46:02.927+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:46:02.926+0100] {dagbag.py:387} ERROR - Failed to import: /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py", line 11, in <module>
+    from scripts.dlt_extractor import run_world_bank_pipeline, run_climate_trace_pipeline
+ModuleNotFoundError: No module named 'scripts.dlt_extractor'
+[2025-03-07T14:46:02.927+0100] {processor.py:927} WARNING - No viable dags retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:46:03.010+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 0.991 seconds
+[2025-03-07T14:48:22.042+0100] {processor.py:186} INFO - Started process (PID=5320) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:48:22.045+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T14:48:22.046+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:48:22.046+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:48:22.915+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:48:22.915+0100] {dagbag.py:387} ERROR - Failed to import: /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py", line 11, in <module>
+    from scripts.dlt_extractor import run_world_bank_pipeline, run_climate_trace_pipeline
+ModuleNotFoundError: No module named 'scripts.dlt_extractor'
+[2025-03-07T14:48:22.916+0100] {processor.py:927} WARNING - No viable dags retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:48:22.994+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 0.955 seconds
+[2025-03-07T14:49:08.682+0100] {processor.py:186} INFO - Started process (PID=5440) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:49:08.685+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T14:49:08.686+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:49:08.686+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:49:08.970+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:49:08.969+0100] {dagbag.py:387} ERROR - Failed to import: /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py", line 14, in <module>
+    from scripts.dlt_extractor import run_world_bank_pipeline, run_climate_trace_pipeline
+ModuleNotFoundError: No module named 'scripts.dlt_extractor'
+[2025-03-07T14:49:08.970+0100] {processor.py:927} WARNING - No viable dags retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:49:09.586+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 0.907 seconds
+[2025-03-07T14:51:40.097+0100] {processor.py:186} INFO - Started process (PID=5786) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:51:40.100+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T14:51:40.101+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:51:40.101+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T13:51:41.474+0000] {processor.py:925} INFO - DAG(s) 'climate_data_dlt_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T13:51:41.533+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:51:41.532+0000] {override.py:1901} INFO - Created Permission View: can delete on DAG:climate_data_dlt_pipeline
+[2025-03-07T13:51:41.539+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:51:41.539+0000] {override.py:1901} INFO - Created Permission View: can edit on DAG:climate_data_dlt_pipeline
+[2025-03-07T13:51:41.543+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:51:41.543+0000] {override.py:1901} INFO - Created Permission View: can read on DAG:climate_data_dlt_pipeline
+[2025-03-07T13:51:41.548+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:51:41.548+0000] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:climate_data_dlt_pipeline
+[2025-03-07T13:51:41.551+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:51:41.551+0000] {override.py:1901} INFO - Created Permission View: can read on DAG Run:climate_data_dlt_pipeline
+[2025-03-07T13:51:41.555+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:51:41.555+0000] {override.py:1901} INFO - Created Permission View: can create on DAG Run:climate_data_dlt_pipeline
+[2025-03-07T13:51:41.559+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:51:41.559+0000] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:climate_data_dlt_pipeline
+[2025-03-07T13:51:41.559+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:51:41.559+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T13:51:41.568+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:51:41.568+0000] {dag.py:3262} INFO - Creating ORM DAG for climate_data_dlt_pipeline
+[2025-03-07T13:51:41.573+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:51:41.573+0000] {dag.py:4180} INFO - Setting next_dagrun for climate_data_dlt_pipeline to 2025-03-06T00:00:00+00:00, run_after=2025-03-07T00:00:00+00:00
+[2025-03-07T13:51:41.584+0000] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 1.490 seconds
+[2025-03-07T14:52:42.170+0100] {processor.py:186} INFO - Started process (PID=5921) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:52:42.173+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T14:52:42.174+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:52:42.174+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T13:52:43.576+0000] {processor.py:925} INFO - DAG(s) 'climate_data_dlt_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T13:52:43.584+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:52:43.584+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T13:52:43.596+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:52:43.596+0000] {dag.py:4180} INFO - Setting next_dagrun for climate_data_dlt_pipeline to 2025-03-06T00:00:00+00:00, run_after=2025-03-07T00:00:00+00:00
+[2025-03-07T13:52:43.608+0000] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 1.441 seconds
+[2025-03-07T14:55:29.402+0100] {processor.py:186} INFO - Started process (PID=6233) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:55:29.405+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T14:55:29.405+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:55:29.405+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T13:55:30.773+0000] {processor.py:925} INFO - DAG(s) 'climate_data_dlt_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T13:55:30.781+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:55:30.781+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T13:55:30.794+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:55:30.794+0000] {dag.py:4180} INFO - Setting next_dagrun for climate_data_dlt_pipeline to 2025-03-06T00:00:00+00:00, run_after=2025-03-07T00:00:00+00:00
+[2025-03-07T13:55:30.805+0000] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 1.406 seconds
+[2025-03-07T14:57:41.939+0100] {processor.py:186} INFO - Started process (PID=6502) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:57:41.943+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T14:57:41.943+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:57:41.943+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T13:57:43.293+0000] {processor.py:925} INFO - DAG(s) 'climate_data_dlt_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T13:57:43.301+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:57:43.301+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T13:57:43.313+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:57:43.313+0000] {dag.py:4180} INFO - Setting next_dagrun for climate_data_dlt_pipeline to 2025-03-06T00:00:00+00:00, run_after=2025-03-07T00:00:00+00:00
+[2025-03-07T13:57:43.324+0000] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 1.388 seconds
+[2025-03-07T14:59:51.049+0100] {processor.py:186} INFO - Started process (PID=6780) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:59:51.052+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T14:59:51.053+0100] {logging_mixin.py:190} INFO - [2025-03-07T14:59:51.052+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T13:59:52.458+0000] {processor.py:925} INFO - DAG(s) 'climate_data_dlt_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T13:59:52.522+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:59:52.521+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T13:59:52.534+0000] {logging_mixin.py:190} INFO - [2025-03-07T13:59:52.534+0000] {dag.py:4180} INFO - Setting next_dagrun for climate_data_dlt_pipeline to 2025-03-06T00:00:00+00:00, run_after=2025-03-07T00:00:00+00:00
+[2025-03-07T13:59:52.547+0000] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 1.501 seconds
+[2025-03-07T15:02:14.006+0100] {processor.py:186} INFO - Started process (PID=7027) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T15:02:14.010+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T15:02:14.010+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:02:14.010+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:02:15.505+0000] {processor.py:925} INFO - DAG(s) 'climate_data_dlt_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:02:15.514+0000] {logging_mixin.py:190} INFO - [2025-03-07T14:02:15.514+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T14:02:15.529+0000] {logging_mixin.py:190} INFO - [2025-03-07T14:02:15.529+0000] {dag.py:4180} INFO - Setting next_dagrun for climate_data_dlt_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T14:02:15.542+0000] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 1.539 seconds
+[2025-03-07T15:04:35.410+0100] {processor.py:186} INFO - Started process (PID=7247) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T15:04:35.413+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T15:04:35.414+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:04:35.414+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:04:36.835+0000] {processor.py:925} INFO - DAG(s) 'climate_data_dlt_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:04:36.843+0000] {logging_mixin.py:190} INFO - [2025-03-07T14:04:36.843+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T14:04:36.855+0000] {logging_mixin.py:190} INFO - [2025-03-07T14:04:36.855+0000] {dag.py:4180} INFO - Setting next_dagrun for climate_data_dlt_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T14:04:36.866+0000] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 1.460 seconds
+[2025-03-07T15:06:58.948+0100] {processor.py:186} INFO - Started process (PID=7537) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T15:06:58.952+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T15:06:58.952+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:06:58.952+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:07:00.400+0000] {processor.py:925} INFO - DAG(s) 'climate_data_dlt_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:07:00.408+0000] {logging_mixin.py:190} INFO - [2025-03-07T14:07:00.408+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T14:07:00.420+0000] {logging_mixin.py:190} INFO - [2025-03-07T14:07:00.420+0000] {dag.py:4180} INFO - Setting next_dagrun for climate_data_dlt_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T14:07:00.431+0000] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 1.486 seconds
+[2025-03-07T15:09:25.458+0100] {processor.py:186} INFO - Started process (PID=7788) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T15:09:25.461+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T15:09:25.462+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:09:25.462+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:09:26.881+0000] {processor.py:925} INFO - DAG(s) 'climate_data_dlt_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:09:26.889+0000] {logging_mixin.py:190} INFO - [2025-03-07T14:09:26.889+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T14:09:26.901+0000] {logging_mixin.py:190} INFO - [2025-03-07T14:09:26.901+0000] {dag.py:4180} INFO - Setting next_dagrun for climate_data_dlt_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T14:09:26.914+0000] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 1.459 seconds
+[2025-03-07T15:11:58.845+0100] {processor.py:186} INFO - Started process (PID=8067) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T15:11:58.849+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T15:11:58.850+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:11:58.850+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:12:00.369+0000] {processor.py:925} INFO - DAG(s) 'climate_data_dlt_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:12:00.379+0000] {logging_mixin.py:190} INFO - [2025-03-07T14:12:00.378+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T14:12:00.394+0000] {logging_mixin.py:190} INFO - [2025-03-07T14:12:00.394+0000] {dag.py:4180} INFO - Setting next_dagrun for climate_data_dlt_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T14:12:00.409+0000] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 1.568 seconds
+[2025-03-07T15:15:04.282+0100] {processor.py:186} INFO - Started process (PID=8436) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T15:15:04.285+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T15:15:04.286+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:15:04.286+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:15:05.680+0000] {processor.py:925} INFO - DAG(s) 'climate_data_dlt_pipeline' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T14:15:05.688+0000] {logging_mixin.py:190} INFO - [2025-03-07T14:15:05.687+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T14:15:05.700+0000] {logging_mixin.py:190} INFO - [2025-03-07T14:15:05.700+0000] {dag.py:4180} INFO - Setting next_dagrun for climate_data_dlt_pipeline to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T14:15:05.712+0000] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 1.433 seconds
+[2025-03-07T15:17:24.048+0100] {processor.py:186} INFO - Started process (PID=8638) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T15:17:24.051+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py for tasks to queue
+[2025-03-07T15:17:24.052+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:17:24.052+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T15:17:24.350+0100] {logging_mixin.py:190} INFO - [2025-03-07T15:17:24.349+0100] {dagbag.py:387} ERROR - Failed to import: /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py", line 14, in <module>
+    from scripts.dlt_extractor import run_world_bank_pipeline, run_climate_trace_pipeline
+ModuleNotFoundError: No module named 'scripts.dlt_extractor'
+[2025-03-07T15:17:24.350+0100] {processor.py:927} WARNING - No viable dags retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py
+[2025-03-07T15:17:24.974+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/dlt-airflow-dag.py took 0.929 seconds

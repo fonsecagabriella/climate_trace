@@ -1,0 +1,18 @@
+services:
+  airflow:
+    image: apache/airflow:2.8.2 #or use latest stable version
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__FERNET_KEY=0eEwcLO6n_PC60e0aeArVmwYWc7gL4OmVhiYWy1uidI=
+    command: bash -c "airflow db init && airflow users create --username myuser --password mypassword --firstname My --lastname User --role Admin --email myuser@example.com || true && airflow webserver"
+    healthcheck:
+      test: ["CMD-SHELL", "[ -f /opt/airflow/airflow-webserver.pid ]"]
+      interval: 30s
+      timeout: 30s
+      retries: 3
