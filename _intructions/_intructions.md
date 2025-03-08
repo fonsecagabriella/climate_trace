@@ -135,3 +135,10 @@ For a production environment, you may want to consider:
 - Configuring Spark memory and executor settings based on your data volume
 - Adding error handling and retries for the Spark jobs
 - Setting up monitoring for the Spark jobs
+
+
+This approach will let you process any historical data that's already in your bucket without having to re-download it through your extraction pipeline. It's perfect for:
+
+Reprocessing data with an updated Spark transformation
+Processing multiple years of historical data in sequence
+Testing your Spark transformations on existing data

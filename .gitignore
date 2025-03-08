@@ -4,3 +4,7 @@ keys/*.json
 kestra/*.csv
 
 climate_data_pipeline/config/*.json
+climate_data_pipeline/logs/*
+
+
+*.env

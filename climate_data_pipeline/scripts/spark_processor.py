@@ -3,6 +3,19 @@ from pyspark.sql import functions as F
 from pyspark.sql.types import DoubleType
 import os
 
+
+def create_spark_session(app_name):
+    """Create a Spark session"""
+    from pyspark.sql import SparkSession
+    
+    # Create a simple Spark session for local processing
+    spark = SparkSession.builder \
+        .appName(app_name) \
+        .master("local[*]") \
+        .getOrCreate()
+    
+    return spark
+
 def process_world_bank_data(input_path, output_path):
     """
     Process World Bank data using Spark
@@ -11,11 +24,19 @@ def process_world_bank_data(input_path, output_path):
         input_path: GCS path to the World Bank data (e.g., 'gs://bucket-name/world_bank/file.csv')
         output_path: GCS path where to save the processed data
     """
-    # Initialize Spark Session
+    # Initialize Spark Session with GCS connector
     spark = SparkSession.builder \
         .appName("World Bank Data Processing") \
-        .config("spark.jars.packages", "com.google.cloud:google-cloud-storage:2.2.0") \
+        .config("spark.jars.packages", 
+                "org.apache.hadoop:hadoop-gcs:3.3.2,com.google.cloud:google-cloud-storage:2.2.0") \
         .getOrCreate()
+    
+    # Configure Hadoop to use GCS connector
+    hadoop_conf = spark._jsc.hadoopConfiguration()
+    hadoop_conf.set("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem")
+    hadoop_conf.set("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS")
+    hadoop_conf.set("fs.gs.auth.service.account.enable", "true")
+    hadoop_conf.set("fs.gs.auth.service.account.json.keyfile", "/Users/gabi/codes/climate_trace/climate_data_pipeline/config/keys.json")
 
     print(f"Reading data from: {input_path}")
 
@@ -55,13 +76,23 @@ def process_climate_trace_data(input_path, output_path):
     # Initialize Spark Session
     spark = SparkSession.builder \
         .appName("Climate Trace Data Processing") \
-        .config("spark.jars.packages", "com.google.cloud:google-cloud-storage:2.2.0") \
+         .config("spark.jars.packages", 
+                "org.apache.hadoop:hadoop-gcs:3.3.2,com.google.cloud:google-cloud-storage:2.2.0") \
         .getOrCreate()
+    
+    # Configure Hadoop to use GCS connector
+    hadoop_conf = spark._jsc.hadoopConfiguration()
+    hadoop_conf.set("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem")
+    hadoop_conf.set("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS")
+    hadoop_conf.set("fs.gs.auth.service.account.enable", "true")
+    hadoop_conf.set("fs.gs.auth.service.account.json.keyfile", "/Users/gabi/codes/climate_trace/climate_data_pipeline/config/keys.json")
     
     print(f"Reading data from: {input_path}")
     
     # Read the CSV data
     df = spark.read.option("header", "true").csv(input_path)
+
+
     
     # Convert relevant columns to double
     for col in df.columns:
@@ -98,8 +129,16 @@ def combine_datasets(world_bank_path, climate_trace_path, output_path):
     # Initialize Spark Session
     spark = SparkSession.builder \
         .appName("Combine Climate and Economic Data") \
-        .config("spark.jars.packages", "com.google.cloud:google-cloud-storage:2.2.0") \
+        .config("spark.jars.packages", 
+                "org.apache.hadoop:hadoop-gcs:3.3.2,com.google.cloud:google-cloud-storage:2.2.0") \
         .getOrCreate()
+    
+    # Configure Hadoop to use GCS connector
+    hadoop_conf = spark._jsc.hadoopConfiguration()
+    hadoop_conf.set("fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem")
+    hadoop_conf.set("fs.AbstractFileSystem.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS")
+    hadoop_conf.set("fs.gs.auth.service.account.enable", "true")
+    hadoop_conf.set("fs.gs.auth.service.account.json.keyfile", "/Users/gabi/codes/climate_trace/climate_data_pipeline/config/keys.json")
     
     # Read the processed data
     wb_df = spark.read.parquet(world_bank_path)

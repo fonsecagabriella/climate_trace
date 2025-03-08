@@ -1,5 +1,3 @@
-pandas
-requests
-google-cloud-storage
-dlt
-apache-airflow-providers-google
+pyspark==3.3.2
+google-cloud-storage==2.7.0
+gcsfs==2023.10.0

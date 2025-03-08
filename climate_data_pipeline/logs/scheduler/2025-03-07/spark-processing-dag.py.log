@@ -41,3 +41,220 @@
 [2025-03-07T16:31:53.943+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:31:53.943+0100] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-07T16:31:53.956+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:31:53.956+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-06T00:00:00+00:00, run_after=2025-03-07T00:00:00+00:00
 [2025-03-07T16:31:53.971+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.192 seconds
+[2025-03-07T16:39:52.852+0100] {processor.py:186} INFO - Started process (PID=17316) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:39:52.855+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T16:39:52.856+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:39:52.856+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:39:53.858+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:39:53.881+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:39:53.881+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:39:53.894+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:39:53.894+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T16:39:53.906+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.058 seconds
+[2025-03-07T16:42:40.800+0100] {processor.py:186} INFO - Started process (PID=17547) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:42:40.803+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T16:42:40.804+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:42:40.804+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:42:41.783+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:42:41.805+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:42:41.805+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:42:41.816+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:42:41.816+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T16:42:41.828+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.031 seconds
+[2025-03-07T16:44:55.700+0100] {processor.py:186} INFO - Started process (PID=17793) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:44:55.705+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T16:44:55.706+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:44:55.706+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:44:56.725+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:44:56.748+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:44:56.748+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:44:56.760+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:44:56.760+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T16:44:56.774+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.077 seconds
+[2025-03-07T16:46:05.803+0100] {processor.py:186} INFO - Started process (PID=17944) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:46:05.806+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T16:46:05.807+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:46:05.807+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:46:06.806+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:46:06.830+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:46:06.829+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:46:06.844+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:46:06.844+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T16:46:06.859+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.059 seconds
+[2025-03-07T16:49:06.295+0100] {processor.py:186} INFO - Started process (PID=18370) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:49:06.298+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T16:49:06.299+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:49:06.299+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:49:07.306+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:49:07.329+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:49:07.328+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:49:07.341+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:49:07.340+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T16:49:07.353+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.061 seconds
+[2025-03-07T16:51:34.830+0100] {processor.py:186} INFO - Started process (PID=18634) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:51:34.833+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T16:51:34.834+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:51:34.834+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:51:35.830+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:51:35.853+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:51:35.853+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:51:35.865+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:51:35.865+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T16:51:35.877+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.051 seconds
+[2025-03-07T16:53:58.655+0100] {processor.py:186} INFO - Started process (PID=18939) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:53:58.658+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T16:53:58.659+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:53:58.659+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:53:59.680+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:53:59.704+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:53:59.704+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:53:59.716+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:53:59.716+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T16:53:59.728+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.076 seconds
+[2025-03-07T16:57:13.430+0100] {processor.py:186} INFO - Started process (PID=19576) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:57:13.433+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T16:57:13.434+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:57:13.434+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:57:14.397+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:57:14.419+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:57:14.418+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:57:14.429+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:57:14.429+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T16:57:14.441+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.014 seconds
+[2025-03-07T16:59:28.161+0100] {processor.py:186} INFO - Started process (PID=19806) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:59:28.164+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T16:59:28.165+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:59:28.165+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:59:29.139+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T16:59:29.162+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:59:29.162+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T16:59:29.174+0100] {logging_mixin.py:190} INFO - [2025-03-07T16:59:29.174+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T16:59:29.186+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.028 seconds
+[2025-03-07T17:02:04.356+0100] {processor.py:186} INFO - Started process (PID=20369) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:02:04.360+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T17:02:04.360+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:02:04.360+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:02:05.312+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:02:05.334+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:02:05.334+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T17:02:05.345+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:02:05.345+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T17:02:05.357+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.003 seconds
+[2025-03-07T17:04:16.790+0100] {processor.py:186} INFO - Started process (PID=20536) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:04:16.793+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T17:04:16.794+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:04:16.793+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:04:17.747+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:04:17.769+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:04:17.768+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T17:04:17.779+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:04:17.779+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T17:04:17.790+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.003 seconds
+[2025-03-07T17:10:19.395+0100] {processor.py:186} INFO - Started process (PID=20744) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:10:19.398+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T17:10:19.399+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:10:19.399+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:10:20.452+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:10:20.477+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:10:20.476+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T17:10:20.489+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:10:20.489+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T17:10:20.501+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.109 seconds
+[2025-03-07T17:12:40.824+0100] {processor.py:186} INFO - Started process (PID=21101) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:12:40.828+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T17:12:40.828+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:12:40.828+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:12:41.845+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:12:41.868+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:12:41.867+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T17:12:41.879+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:12:41.879+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T17:12:41.891+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.069 seconds
+[2025-03-07T17:15:02.858+0100] {processor.py:186} INFO - Started process (PID=21463) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:15:02.861+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T17:15:02.862+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:15:02.862+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:15:03.833+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:15:03.854+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:15:03.854+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T17:15:03.865+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:15:03.865+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T17:15:03.876+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.021 seconds
+[2025-03-07T17:17:29.166+0100] {processor.py:186} INFO - Started process (PID=21813) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:17:29.169+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T17:17:29.170+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:17:29.169+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:17:30.158+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:17:30.182+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:17:30.182+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T17:17:30.194+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:17:30.194+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T17:17:30.206+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.044 seconds
+[2025-03-07T17:23:53.639+0100] {processor.py:186} INFO - Started process (PID=22261) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:23:53.642+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T17:23:53.643+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:23:53.643+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:23:54.623+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:23:54.701+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:23:54.701+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T17:23:54.713+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:23:54.713+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T17:23:54.726+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.090 seconds
+[2025-03-07T17:26:45.673+0100] {processor.py:186} INFO - Started process (PID=22582) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:26:45.676+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T17:26:45.677+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:26:45.677+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:26:46.628+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T17:26:46.649+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:26:46.649+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T17:26:46.660+0100] {logging_mixin.py:190} INFO - [2025-03-07T17:26:46.660+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T17:26:46.671+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.001 seconds
+[2025-03-07T18:24:02.147+0100] {processor.py:186} INFO - Started process (PID=23053) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T18:24:02.150+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T18:24:02.151+0100] {logging_mixin.py:190} INFO - [2025-03-07T18:24:02.150+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T18:24:03.100+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T18:24:03.123+0100] {logging_mixin.py:190} INFO - [2025-03-07T18:24:03.123+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T18:24:03.134+0100] {logging_mixin.py:190} INFO - [2025-03-07T18:24:03.134+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T18:24:03.145+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.002 seconds
+[2025-03-07T20:43:46.931+0100] {processor.py:186} INFO - Started process (PID=23344) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:43:46.935+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T20:43:46.936+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:43:46.936+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:43:48.132+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:43:48.161+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:43:48.160+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T20:43:48.175+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:43:48.174+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T20:43:48.190+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.263 seconds
+[2025-03-07T20:46:33.984+0100] {processor.py:186} INFO - Started process (PID=23713) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:46:33.987+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T20:46:33.988+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:46:33.988+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:46:34.982+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:46:35.006+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:46:35.006+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T20:46:35.019+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:46:35.019+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T20:46:35.031+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.050 seconds
+[2025-03-07T20:48:55.510+0100] {processor.py:186} INFO - Started process (PID=23988) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:48:55.513+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T20:48:55.514+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:48:55.514+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:48:56.541+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:48:56.563+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:48:56.563+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T20:48:56.574+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:48:56.574+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T20:48:56.586+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.079 seconds
+[2025-03-07T20:51:19.647+0100] {processor.py:186} INFO - Started process (PID=24173) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:51:19.650+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T20:51:19.651+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:51:19.651+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:51:20.654+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:51:20.676+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:51:20.676+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T20:51:20.687+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:51:20.687+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T20:51:20.699+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.055 seconds
+[2025-03-07T20:53:43.413+0100] {processor.py:186} INFO - Started process (PID=24482) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:53:43.416+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T20:53:43.417+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:53:43.417+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:53:44.480+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:53:44.504+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:53:44.503+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T20:53:44.515+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:53:44.515+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T20:53:44.527+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.117 seconds
+[2025-03-07T20:56:05.857+0100] {processor.py:186} INFO - Started process (PID=24778) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:56:05.861+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T20:56:05.862+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:56:05.861+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:56:06.877+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:56:06.900+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:56:06.900+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T20:56:06.912+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:56:06.912+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T20:56:06.924+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.070 seconds
+[2025-03-07T20:58:27.900+0100] {processor.py:186} INFO - Started process (PID=24966) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:58:27.903+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T20:58:27.903+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:58:27.903+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:58:28.888+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T20:58:28.910+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:58:28.910+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T20:58:28.922+0100] {logging_mixin.py:190} INFO - [2025-03-07T20:58:28.921+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T20:58:28.933+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.037 seconds
+[2025-03-07T21:00:48.153+0100] {processor.py:186} INFO - Started process (PID=25165) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:00:48.156+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T21:00:48.157+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:00:48.157+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:00:49.163+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:00:49.186+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:00:49.185+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T21:00:49.196+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:00:49.196+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T21:00:49.208+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.059 seconds
+[2025-03-07T21:01:43.118+0100] {processor.py:186} INFO - Started process (PID=25301) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:01:43.122+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T21:01:43.123+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:01:43.123+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:01:44.361+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:01:44.393+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:01:44.392+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T21:01:44.409+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:01:44.409+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T21:01:44.428+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.313 seconds
+[2025-03-07T21:04:34.064+0100] {processor.py:186} INFO - Started process (PID=25562) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:04:34.068+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T21:04:34.069+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:04:34.068+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:04:35.084+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:04:35.110+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:04:35.109+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T21:04:35.122+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:04:35.122+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T21:04:35.134+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.073 seconds
+[2025-03-07T21:06:53.973+0100] {processor.py:186} INFO - Started process (PID=25794) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:06:53.976+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T21:06:53.977+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:06:53.977+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:06:54.969+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:06:54.992+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:06:54.992+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T21:06:55.004+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:06:55.003+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T21:06:55.016+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.046 seconds
+[2025-03-07T21:09:14.664+0100] {processor.py:186} INFO - Started process (PID=26034) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:09:14.667+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T21:09:14.668+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:09:14.668+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:09:15.689+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:09:15.712+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:09:15.711+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T21:09:15.723+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:09:15.723+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T21:09:15.735+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.074 seconds
+[2025-03-07T21:14:55.958+0100] {processor.py:186} INFO - Started process (PID=26457) to work on /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:14:55.961+0100] {processor.py:914} INFO - Processing file /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py for tasks to queue
+[2025-03-07T21:14:55.962+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:14:55.962+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:14:56.985+0100] {processor.py:925} INFO - DAG(s) 'climate_data_spark_processing' retrieved from /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py
+[2025-03-07T21:14:57.008+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:14:57.008+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-07T21:14:57.021+0100] {logging_mixin.py:190} INFO - [2025-03-07T21:14:57.021+0100] {dag.py:4180} INFO - Setting next_dagrun for climate_data_spark_processing to 2025-03-07T00:00:00+00:00, run_after=2025-03-08T00:00:00+00:00
+[2025-03-07T21:14:57.033+0100] {processor.py:208} INFO - Processing /Users/gabi/codes/climate_trace/climate_data_pipeline/dags/spark-processing-dag.py took 1.078 seconds
