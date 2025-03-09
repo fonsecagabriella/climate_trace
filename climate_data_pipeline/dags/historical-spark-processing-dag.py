@@ -39,7 +39,7 @@ COMBINED_DATA_PATH = f"{GCS_PROCESSED_BUCKET}/combined/{PROCESSING_YEAR}"
 
 # Create the DAG
 dag = DAG(
-    'climate_data_historical_data_processing',
+    'climate_data_spark_historical_data_processing',
     default_args=default_args,
     description='Process existing climate and world bank data with Spark',
     schedule_interval=None,  # Run manually (no schedule)
