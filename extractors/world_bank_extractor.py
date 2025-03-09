@@ -11,6 +11,8 @@ class WorldBankExtractor:
     OUTPUT_DIR = "world_bank_data"
     
     # List of indicators to extract (you can modify this list)
+    # https://data.worldbank.org/indicator/
+    
     INDICATORS = {
         'SP.POP.TOTL': 'Population, total',
         'NY.GDP.PCAP.CD': 'GDP per capita (current US$)',
