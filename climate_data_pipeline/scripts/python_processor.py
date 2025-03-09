@@ -104,7 +104,8 @@ def process_world_bank_data(input_path, output_path):
         df = pd.read_csv(local_input_path)
         
         # Clean column names - lowercase, replace spaces with underscores, strip whitespace
-        df.columns = [col.lower().replace(' ', '_').strip() for col in df.columns]
+        df.columns = [col.lower().replace(' ', '_').replace('.', '_').strip() for col in df.columns]
+
         
         # Print column names for debugging
         print(f"Columns after cleaning: {df.columns.tolist()}")
@@ -179,7 +180,8 @@ def process_climate_trace_data(input_path, output_path):
         df = pd.read_csv(local_input_path)
         
         # Clean column names - lowercase, replace spaces with underscores, strip whitespace
-        df.columns = [col.lower().replace(' ', '_').strip() for col in df.columns]
+        df.columns = [col.lower().replace(' ', '_').replace('.', '_').strip() for col in df.columns]
+
         
         # Print the column names to debug
         print(f"Columns in the data after cleaning: {df.columns.tolist()}")

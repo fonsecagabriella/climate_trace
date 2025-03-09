@@ -38,6 +38,10 @@ GCS_WORLD_BANK_PROCESSED = f"{GCS_PATH}/processed/world_bank"
 GCS_CLIMATE_TRACE_PROCESSED = f"{GCS_PATH}/processed/climate_trace"
 GCS_COMBINED_DATA = f"{GCS_PATH}/processed/combined"
 
+# Path to the specific year's processed data
+GCS_WORLD_BANK_YEAR = f"{GCS_WORLD_BANK_PROCESSED}/{PROCESSING_YEAR}/data.parquet"
+GCS_CLIMATE_TRACE_YEAR = f"{GCS_CLIMATE_TRACE_PROCESSED}/{PROCESSING_YEAR}/data.parquet"
+
 # Define BigQuery dataset
 BQ_DATASET = 'zoomcamp_climate_raw'
 BQ_PROJECT = Variable.get("gcp_project")  # Make sure this variable exists in Airflow
@@ -86,7 +90,43 @@ combine_data = PythonOperator(
     trigger_rule=TriggerRule.ALL_DONE,  # Run even if previous tasks fail
 )
 
-# Create BigQuery external tables
+# Create BigQuery external table for World Bank data - no Hive partitioning
+create_wb_bq_table = BigQueryCreateExternalTableOperator(
+    task_id='create_world_bank_bq_table',
+    table_resource={
+        'tableReference': {
+            'projectId': BQ_PROJECT,
+            'datasetId': BQ_DATASET,
+            'tableId': f'world_bank_data_{PROCESSING_YEAR}',
+        },
+        'externalDataConfiguration': {
+            'sourceFormat': 'PARQUET',
+            'sourceUris': [GCS_WORLD_BANK_YEAR],
+            'autodetect': True
+        },
+    },
+    dag=dag,
+)
+
+# Create BigQuery external table for Climate Trace data - no Hive partitioning
+create_ct_bq_table = BigQueryCreateExternalTableOperator(
+    task_id='create_climate_trace_bq_table',
+    table_resource={
+        'tableReference': {
+            'projectId': BQ_PROJECT,
+            'datasetId': BQ_DATASET,
+            'tableId': f'climate_trace_data_{PROCESSING_YEAR}',
+        },
+        'externalDataConfiguration': {
+            'sourceFormat': 'PARQUET',
+            'sourceUris': [GCS_CLIMATE_TRACE_YEAR],
+            'autodetect': True
+        },
+    },
+    dag=dag,
+)
+
+# Create BigQuery external table for combined data
 create_combined_bq_table = BigQueryCreateExternalTableOperator(
     task_id='create_combined_bq_table',
     table_resource={
@@ -101,9 +141,17 @@ create_combined_bq_table = BigQueryCreateExternalTableOperator(
             'autodetect': True
         },
     },
-    trigger_rule=TriggerRule.ALL_DONE,
+    trigger_rule=TriggerRule.ALL_DONE,  # Run even if previous tasks fail
     dag=dag,
 )
 
-# Define dependencies
-[process_wb_data, process_ct_data] >> combine_data >> create_combined_bq_table
+# Define dependencies:
+# First process both datasets independently
+process_wb_data >> create_wb_bq_table
+process_ct_data >> create_ct_bq_table
+
+# Then combine the data
+[process_wb_data, process_ct_data] >> combine_data
+
+# Finally create the combined table after creating individual tables
+[create_wb_bq_table, create_ct_bq_table, combine_data] >> create_combined_bq_table

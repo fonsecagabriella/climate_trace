@@ -142,3 +142,33 @@ This approach will let you process any historical data that's already in your bu
 Reprocessing data with an updated Spark transformation
 Processing multiple years of historical data in sequence
 Testing your Spark transformations on existing data
+
+### Python
+
+The workflow is as structured:
+
+You process the World Bank data and Climate Trace data separately
+You combine these datasets into a single dataset
+You create three BigQuery tables: one for each original dataset and one for the combined data
+
+<img src="./images/python-dag.png">
+
+Process Tasks (in pink):
+
+process_world_bank_data (PythonOperator)
+process_climate_trace_data (PythonOperator)
+
+
+Combine Task (in pink):
+
+combine_data (PythonOperator) - This is your single data combination task
+
+
+BigQuery Table Creation Tasks (in blue):
+
+create_world_bank_bq_table (BigQueryCreateExternalTableOperator)
+create_climate_trace_bq_table (BigQueryCreateExternalTableOperator)
+create_combined_bq_table (BigQueryCreateExternalTableOperator)
+
+
+
