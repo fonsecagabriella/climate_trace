@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: peppy-plateau-447914-j6 # Update with your project ID
+    schema: zoomcamp_climate_raw   # Your raw data schema
+    tables:
+      - name: combined_climate_economic
+        description: "Combined climate and economic data from World Bank and Climate Trace"

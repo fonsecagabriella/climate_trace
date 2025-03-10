@@ -92,14 +92,14 @@ def process_world_bank_data(input_path, output_path):
         client = storage.Client()
         bucket_name = input_path.replace("gs://", "").split("/")[0]
         blob_path = "/".join(input_path.replace(f"gs://{bucket_name}/", "").split("/"))
-        
+    
         local_input_path = os.path.join(temp_dir, os.path.basename(input_path))
-        
+    
         bucket = client.bucket(bucket_name)
         blob = bucket.blob(blob_path)
         blob.download_to_filename(local_input_path)
         print(f"Downloaded {input_path} to {local_input_path}")
-        
+    
         # Read the CSV data
         df = pd.read_csv(local_input_path)
         
@@ -109,44 +109,44 @@ def process_world_bank_data(input_path, output_path):
         
         # Print column names for debugging
         print(f"Columns after cleaning: {df.columns.tolist()}")
-        
+    
         # Convert numeric columns
         for col in df.columns:
             if col != 'country':
                 df[col] = pd.to_numeric(df[col], errors='coerce')
-    
+
         # Add calculated columns
         if 'sp_pop_totl' in df.columns and 'en_atm_co2e_pc' in df.columns:
             df['total_emissions'] = df['sp_pop_totl'] * df['en_atm_co2e_pc']
-            
+
         # Add year column if not present
         if 'year' not in df.columns:
             df['year'] = int(year)
-        
+
         # Write to a temporary parquet file
         local_output_file = os.path.join(temp_dir, "data.parquet")
         df.to_parquet(local_output_file)
-        
+
         # Check if year-specific output directory already exists
         year_output_path = f"{output_path}/{year}"
         output_file = f"{year_output_path}/data.parquet"
-        
+
         # Upload to GCS
         output_bucket_name = year_output_path.replace("gs://", "").split("/")[0]
         output_blob_path = "/".join(year_output_path.replace(f"gs://{output_bucket_name}/", "").split("/"))
-        
+
         output_bucket = client.bucket(output_bucket_name)
-        
+
         # Delete existing directory if it exists
         for blob in output_bucket.list_blobs(prefix=f"{output_blob_path}/"):
             blob.delete()
             print(f"Deleted existing blob: {blob.name}")
-        
+
         # Upload new file
         output_blob = output_bucket.blob(f"{output_blob_path}/data.parquet")
         output_blob.upload_from_filename(local_output_file)
         print(f"Uploaded processed data to {output_file}")
-        
+
     return year_output_path
 
 def process_climate_trace_data(input_path, output_path):
@@ -248,18 +248,18 @@ def combine_datasets(world_bank_path, climate_trace_path, output_path):
     import os
     from google.cloud import storage
     import tempfile
-    
+
     print(f"Combining datasets from World Bank: {world_bank_path} and Climate Trace: {climate_trace_path}")
-    
+
     # Create a temp directory for processing
     with tempfile.TemporaryDirectory() as temp_dir:
         client = storage.Client()
-        
+    
         # Get all available years from both datasets
         wb_bucket_name = world_bank_path.replace("gs://", "").split("/")[0]
         wb_prefix = "/".join(world_bank_path.replace(f"gs://{wb_bucket_name}/", "").split("/"))
         wb_bucket = client.bucket(wb_bucket_name)
-        
+
         ct_bucket_name = climate_trace_path.replace("gs://", "").split("/")[0]
         ct_prefix = "/".join(climate_trace_path.replace(f"gs://{ct_bucket_name}/", "").split("/"))
         ct_bucket = client.bucket(ct_bucket_name)
@@ -375,7 +375,7 @@ def combine_datasets(world_bank_path, climate_trace_path, output_path):
         else:
             # Create an empty dataframe with expected columns
             combined_df = pd.DataFrame(columns=[
-                'country', 'year', 'sp_pop_totl', 'ny_gdp_pcap_cd', 'en_atm_co2e_pc', 
+                'country', 'year', 'sp_pop_totl', 'ny_gdp_pcap_cd', 'en_atm_co2e_pc',
                 'total_emissions', 'co2', 'ch4', 'n2o', 'total', 'co2e_20yr', 'energy_percent'
             ])
             print("No data available for either dataset")

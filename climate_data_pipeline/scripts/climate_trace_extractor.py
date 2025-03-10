@@ -109,25 +109,25 @@ class ClimateTraceExtractor:
         # Get all countries
         countries = self.get_countries()
         country_codes = [country['alpha3'] for country in countries]
-        
+
         print(f"Found {len(country_codes)} countries")
-        
+
         # Process each year
         for year in range(self.since_year, self.to_year + 1):
             print(f"Processing emissions data for year {year}...")
-            
+
             # Due to API limitations, we may need to process countries in batches
             batch_size = 20  # Adjust based on API limitations
             all_data = []
-            
+
             for i in range(0, len(country_codes), batch_size):
                 batch_countries = country_codes[i:i+batch_size]
                 print(f"Processing batch of {len(batch_countries)} countries...")
-                
+
                 data = self.fetch_emissions_data(batch_countries, year)
                 if data:
                     all_data.extend(data)
-            
+
             # Process and save data for this year
             df = self.process_emissions_data(all_data)
             self.save_year_data(year, df)
@@ -137,7 +137,7 @@ def main():
     parser = argparse.ArgumentParser(description="Climate Trace Emissions Data Extractor")
     parser.add_argument("since_year", type=int, help="Starting year for emissions data")
     parser.add_argument("--to_year", type=int, help="Ending year for emissions data (optional)")
-    
+
     # Parse arguments
     args = parser.parse_args()
 

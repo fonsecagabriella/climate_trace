@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: stg_combined_climate_economic
+    description: "Staged combined climate and economic data"
+    columns:
+      - name: country
+        description: "Country ISO3 code"
+        tests:
+          - not_null
+      - name: year
+        description: "Year of the data"
+        tests:
+          - not_null
+      - name: population
+        description: "Total population (World Bank)"
+      - name: gdp_per_capita
+        description: "GDP per capita in current US$ (World Bank)"
+      - name: co2_emissions_per_capita
+        description: "CO2 emissions per capita in metric tons (World Bank)"
+      - name: total_emissions
+        description: "Total greenhouse gas emissions in CO2e (Climate Trace)"
+
+  - name: climate_economic_analysis
+    description: "Analysis of climate and economic indicators with derived metrics"
+    columns:
+      - name: country
+        tests:
+          - not_null
+      - name: total_emissions_per_capita
+        description: "Total emissions divided by population"
+      - name: gdp_per_emission_unit
+        description: "GDP per capita divided by CO2 emissions per capita"
+      - name: income_category
+        description: "Classification based on GDP per capita"
+      - name: emissions_category
+        description: "Classification based on total emissions"
+
+  - name: regional_emissions_summary
+    description: "Regional analysis of emissions and economic indicators"
+    columns:
+      - name: region
+        description: "Geographic region"
+        tests:
+          - not_null
+      - name: total_emissions
+        description: "Sum of total emissions for all countries in the region"
